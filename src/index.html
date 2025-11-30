@@ -6,10 +6,10 @@
   <link href="./styles.css" rel="stylesheet">
 </head>
 <body>
-  <div class="h-175 bg-cover bg-center bg-[url('./assets/bg.png')]">
+  <div class="h-175 bg-cover bg-center bg-[url('./assets/bg.png')] md:min-h-[450px] lg:min-h-[750]">
     <div class="inset-0 bg-black/35 h-175">
        <div class="flex items-center justify-between px-18 pt-5">
-        <img src="./assets/Logo.png" class="w-30 invert"/>
+        <img src="./assets/Logo.png" class="md:w-24 w-30 invert"/>
         <nav class="hidden md:flex gap-5 text-white font-bold">
           <a href="#">DESTINATIONS</a>
           <a href="#">TOPICS</a>
@@ -25,18 +25,16 @@
       <button class="mt-8 bg-yellow-300 px-4 py-2 rounded-lg font-semibold text-black">SUBSCRIBE FOR TIPS</button>
     </div>
     </div>
-    <div class="text-white bg-gray-900 gap-4">
-         <div class="pl-265">
-          <h2 class="font-bold">LATEST POSTS</h2>
-        </div>
-        <div class="flex gap-4">
-            <div class="flex gap-4 pt-8 pl-15 pb-10">
+    <div class="text-white md:px-20 bg-gray-900 gap-4">
+          <p class="font-bold pl-87 hover:text-yellow-500 mb-8 text-white">LATEST POSTS</p>
+        <div class="flex gap-4 flex-col lg:flex-row">
+            <div class="flex pt-8 pb-10">
           <div class="">
             <img src="./assets/Profile.png" class="w-34 rounded-full"/>
-            <h2 class="font-bold pl-6 pt-3">Marek Brok</h2>
+            <h2 class="font-bold pl-5 pt-3">Marek Brok</h2>
             <p class="pl-6">Founder</p>
           </div>
-          <div class="pr-10">
+          <div class="leading-relaxed">
             <p class="pb-7"><b>Welcome!</b> Over a decade ago I set off on a career<br/>
                         break that never ended. I now hop around the globe</br>
                         bringing you the most in-depth travel guides. Whether</br> 
@@ -46,7 +44,7 @@
           </div>
         </div>
         <div class="pt-6 flex gap-4">
-           <div class="w-65 h-50 pt-6 bg-cover bg-center bg-[url('./assets/bg2.png')]">
+           <div class="w-65 h-50 pt-6 bg-cover bg-center" style="background-image: url('./assets/bg2.png')">
            <div class="font-bold pt-3 bg-black/50 h-50">
              <p class="pl-10">Java By Train: How To</p>
              <p class="pl-15">Travel Between</p>
@@ -54,7 +52,7 @@
              <p class="pl-23">Malang</p>
            </div> 
         </div>
-        <div class="w-65 h-50 bg-cover bg-center bg-[url('./assets/bg1.png')]">
+        <div class="w-65 h-50 bg-cover" style="background-image: url('./assets/bg1.png')">
            <div class="font-bold pt-10 bg-black/50 h-50">
             <p class="pl-13">Singapore On A</p>
             <p class="pl-11">Budget: 7 Tips for</p>
@@ -65,6 +63,34 @@
         </div>
         </div>
     </div>
+    <div class="flex gap-8 pt-20">
+            <div class="">
+             <p class="text-4xl text-black ml-14 pt-10 font-bold">Explore Destinations</p>
+             <p class="ml-14 pt-5">Dig into our down-to-Earth travel guides <b>from </br>
+                         around the world. From must-do journeys to </br>
+                         tucked-away treasures,</b> we'll share everything</br> 
+                         you need to know.</p>
+            </div>
+            <div class="flex flex-col md:flex-row gap-7">
+                <div class="h-55 w-full md:w-90 bg-cover bg-center bg-[url('./assets/pic1.png')]">
+                <h2 class="text-white font-bold pl-28 pt-25 hover:text-yellow-500 h-55">Southeast Asia</h2>
+            </div>
+            <div class="h-55 w-full md:w-90 bg-cover bg-center bg-[url('./assets/pic2.png')]">
+                <h2 class="text-white font-bold pl-28 pt-25 hover:text-yellow-500 h-55">Central America</h2>
+            </div>
+            </div>
+        </div>
+        <div class="flex pt-5 ml-14 gap-6 flex-col md:flex-row">
+             <div class="h-55 w-full md:w-90 bg-cover bg-center bg-[url('./assets/pic3.png')]">
+                <h2 class="text-white font-bold pl-32 pt-25 hover:text-yellow-500 h-55">Europe</h2>
+            </div>
+            <div class="h-55 w-full md:w-90 bg-cover bg-center bg-[url('./assets/pic4.png')]">
+                <h2 class="text-white font-bold pl-28 pt-25 hover:text-yellow-500 h-55">South America</h2>
+            </div>
+             <div class="h-55 w-full md:w-90 bg-cover bg-center bg-[url('./assets/pic5.png')]">
+                <h2 class="text-white font-bold pl-32 pt-25 hover:text-yellow-500 h-55">Africa</h2>
+            </div>
+        </div>
     
     
   </div>
